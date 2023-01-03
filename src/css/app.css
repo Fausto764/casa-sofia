@@ -1,0 +1,12 @@
+body{
+    background: #ede9e7;
+}
+
+.main{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+@media screen and (min-width: 320px) and (max-width: 480px){
+ 
+
+}

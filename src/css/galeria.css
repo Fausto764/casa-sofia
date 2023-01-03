@@ -1,0 +1,138 @@
+.presentacion-galeria{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/src/imagen-galeria (38).jpeg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.presentacion__div{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 500px;
+    height: 150px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 25px;
+    padding: 50px;
+    border-bottom: 3px solid #24704f;
+}
+
+
+
+.galeria-container{
+    height: max-content;
+    padding: 50px 0 50px 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) ;
+    grid-auto-rows: auto;
+    grid-gap: 25px;
+    padding: 25px;  
+    justify-content: center;
+    align-items: center;
+}
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    overflow: hidden;
+}
+.grid-item img{
+    height: 300px;
+    width:  100%;   
+    object-fit: cover;
+    object-position: center;    
+    transition: all 2s;
+}
+.grid-item img:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.overlay{
+    position: fixed;
+    left: 0;
+    top: 0px;
+    right: 150px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.8);
+    z-index: 10;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+    user-select: none;
+}
+.overlay-off{
+    display: none;
+    visibility: hidden;
+}
+.overlay .slideshow{
+    width: 90%;
+    height: 90%;
+    color: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.slideshow img{
+    height: 100%;
+    width: 90%;
+    object-fit: contain;
+}
+.btn-cerrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -15px;
+    right: -15px ;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, .7);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: all .2s;
+    color: #fff;
+}
+.btn-cerrar:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.btn-cerrar-font{
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    font-size: 70px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: all .2s;
+    color: #24704f;
+    padding: 15px;
+}
+.btns:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.atras{
+    left: 20px;
+}
+.adelante{
+    right: 20px;
+}
