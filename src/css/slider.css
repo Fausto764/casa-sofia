@@ -69,7 +69,6 @@
 @media screen and (min-width: 320px) and (max-width: 480px){
     .contenedor-texto, .p-active{
         font-size: 25px;
-        padding: 0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -83,6 +82,6 @@
     }
     .contenedor-imagenes{
         position: relative;
-        height: 98vh;
+        height: 95vh;
     }
 }
