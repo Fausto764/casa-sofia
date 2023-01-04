@@ -78,12 +78,12 @@
         top: 50%;
     }
     .img{
-        height: 94vh  ;
+        height: 92vh  ;
     }
     .contenedor-imagenes{
         position: relative;     
     }
     .contenedor-principal{
-        height: 95vh;
+        height: 94vh;
     }
 }
