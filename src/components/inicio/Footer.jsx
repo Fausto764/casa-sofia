@@ -1,9 +1,21 @@
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faLocationDot} from '@fortawesome/free-solid-svg-icons';    
-import { faFacebook, faInstagram, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
+import { faPhone, faInstagram, faWhatsapp} from '@fortawesome/free-brands-svg-icons';
 import '../../css/footer.css'
 
 const Footer = ()=>{
+    const handleClickI = () => {
+    // Cambiar la URL a la que deseas redirigir
+    window.location.href = 'https://www.instagram.com/casasofiadelbosque/';
+  };
+    const handleClickW = () => {
+    // Cambiar la URL a la que deseas redirigir
+    window.location.href = 'https://w.app/ecXbDd';
+  };
+    const handleClickP = () => {
+    // Cambiar la URL a la que deseas redirigir
+    window.location.href = 'tel:542234489136';
+  };
     return(
         <footer className="footer">
             <section className="footer-section">
@@ -18,9 +30,9 @@ const Footer = ()=>{
                 </div>
                 <div className="footer-container__div__columns">
                     <div className="footer-container__div__columns__icons">
-                        <FontAwesomeIcon icon={faFacebook} className="columns-icons"/>
-                        <FontAwesomeIcon icon={faInstagram} className="columns-icons"/>
-                        <FontAwesomeIcon icon={faWhatsapp} className="columns-icons"/>
+                        <FontAwesomeIcon icon={faPhone} onClick={handleClickP} className="columns-icons"/>
+                        <FontAwesomeIcon icon={faInstagram} onClick={handleClickI} className="columns-icons"/>
+                        <FontAwesomeIcon icon={faWhatsapp} onClick={handleClickW} className="columns-icons"/>
                     </div>
                 </div>
             </section>
