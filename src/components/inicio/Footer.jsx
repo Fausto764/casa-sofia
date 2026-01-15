@@ -7,15 +7,24 @@ import '../../css/footer.css'
 const Footer = ()=>{
     const handleClickI = () => {
     // Cambiar la URL a la que deseas redirigir
-    window.location.href = 'https://www.instagram.com/casasofiadelbosque/';
+    window.open( 
+        'https://www.instagram.com/casasofiadelbosque/',
+          "_blank"
+    )
   };
     const handleClickW = () => {
     // Cambiar la URL a la que deseas redirigir
-    window.location.href = 'https://w.app/ecXbDd';
+    window.open( 
+        'https://wa.me/542234489136',
+          "_blank"
+    )
   };
     const handleClickP = () => {
     // Cambiar la URL a la que deseas redirigir
-    window.location.href = 'tel:542234489136';
+    window.open(
+     'tel:542234489136',
+       "_blank"
+    )
   };
     return(
         <footer className="footer">
